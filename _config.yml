@@ -1,1 +1,4 @@
 theme: jekyll-theme-cayman
+title: Shaon's Portfolio
+description: Recent open source work showcase
+show_downloads: ["true"]
