@@ -25,8 +25,8 @@ We wrote genetic algorithm to train neural network to balance a pole on a moving
 
 {:refdef: style="text-align: center;"}
 <p align="middle" float="center">
-  <img src="/images/evolution2.gif" width="400" />
-  <img src="/images/evolution.png" width="400" />
+  <img src="https://github.com/Wizdore/portfolio/raw/main/images/evolution2.gif" width="400" />
+  <img src="https://github.com/Wizdore/portfolio/raw/main/images/evolution.png" width="400" />
 </p>
 {: refdef}
 
