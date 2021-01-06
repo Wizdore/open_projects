@@ -13,7 +13,7 @@ This project is aimed at collecting used home-for-sale ads data from finn. The p
 
 
 ## [Norway 1910 Census data analysis](https://github.com/Wizdore/portfolio/raw/main/reports/Census_data_analysis.pdf)
-This project was done as a course work for data intensive systems. In the final project of the course we proposed a project where we had to process a large amount of semi-structured data. We mailed [Digitalarkivet](https://www.digitalarkivet.no/) for historical census data. They provided us with 6GB of proprietary data in seperated files. We have deployed `Hadoop` in the university provided server space to clean and process the data and make visualizations. We visualized distributions of gender, religion and population density on the present day map of Norway.
+This project was done as a course work for data intensive systems. In the final project of the course we proposed a project where we had to process a large amount of semi-structured data. We mailed [Digitalarkivet](https://www.digitalarkivet.no/) for historical census data. They provided us with 6GB of proprietary data in seperated files. We have deployed `Hadoop` in the university provided server space to clean and process the data and make visualizations. We cleaned the semi structured xml data to a flat format, mapped 1910 municipality names to current day municipalities using wikipedia as a reference. We visualized distributions of gender, religion and population density on the present day map of Norway.
 
 {:refdef: style="text-align: center;"}
 ![](/images/census.png)
