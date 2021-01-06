@@ -28,3 +28,12 @@ We wrote genetic algorithm to train neural network to balance a pole on a moving
 {: refdef}
 
 
+## [AR Sticker application](https://github.com/Wizdore/AR_Project)
+It was developed for "Project in Computer Science" course using C# and Unity Engine. It contains an asset library, user can choose any image or text from the asset library and place it in the augmented reality environment. The objects in the environment can also be moved, deleted or transformed through a dynamic UI system which changes based on the context. The codebase is easily extendable, 3D objects can also be included in the asset library and Buttons will be generated at runtime. 
+
+#### [Project Report](https://github.com/Wizdore/AR_Project/raw/main/AR_ProjectReport.pdf)
+{:refdef: style="text-align: center;"}
+{% include youtubePlayer.html id=JjdaOWXR9-M %}
+{: refdef}
+
+
