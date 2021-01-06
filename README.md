@@ -20,3 +20,11 @@ This project was done as a course work for data intensive systems. In the final 
 {: refdef}
 
 
+## [Genetic Algorithm to solve dynamic control problem](https://github.com/Wizdore/Evolutionary_Ann)
+We wrote genetic algorithm to train neural network to balance a pole on a moving cart. The neural network and the genetic algorithm both is written from the scratch. We have also tweaked the genetic algorithm's fitness scoring so that the pole that moves the most without falling get a hgher score, It resulted into more interesting neural networks which try to keep the pole from falling but also keep moving on the environment. The same algorithm can be used to solve other dynamic control problems in `openai gym`. We use multithreading to show the performance metrics and cart simulation at the same time.
+
+{:refdef: style="text-align: center;"}
+![](/images/evolution.png)
+{: refdef}
+
+
