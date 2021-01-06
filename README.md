@@ -33,7 +33,7 @@ It was developed for "Project in Computer Science" course using C# and Unity Eng
 
 #### [Project Report](https://github.com/Wizdore/AR_Project/raw/main/AR_ProjectReport.pdf)
 {:refdef: style="text-align: center;"}
-{% include youtubePlayer.html id=JjdaOWXR9-M %}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JjdaOWXR9-M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 {: refdef}
 
 
