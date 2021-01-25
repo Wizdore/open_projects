@@ -24,7 +24,7 @@ This system allows an user to train a neural network with a digital signature. T
 
 
 
-## [AR Sticker application](https://github.com/Wizdore/AR_Project)
+## [AR Object Placement and Interaction](https://github.com/Wizdore/AR_Project)
 It was developed for "Project in Computer Science" course using C# and Unity Engine. It contains an asset library, user can choose any image or text from the asset library and place it in the augmented reality environment. The objects in the environment can also be moved, deleted or transformed through a dynamic UI system which changes based on the context. The codebase is easily extendable, 3D objects can also be included in the asset library and Buttons will be generated at runtime. 
 
 #### [Project Report](https://github.com/Wizdore/AR_Project/raw/main/AR_ProjectReport.pdf)
