@@ -1,3 +1,12 @@
+## [Norwegian house ads data dashboard](https://housing-market-norway.herokuapp.com/)
+This is a dashboard of general statistics of housing market. The data is mined using the [FinnScrapper](https://github.com/Wizdore/finn_scraper) deployed on a `Raspberry Pi` that collect new house ads posted in finn.no and stores the data locally. The dashboard aims to provide an overview of price, location, facilities etc. one can expect given their preference of house price, area and other factors. The data cleaning, preparation and the dashboard is all done with Python. Its currently deployed on [Heroku](https://housing-market-norway.herokuapp.com/).
+
+{:refdef: style="text-align: center;"}
+![](/images/housingdashboard.png)
+{: refdef}
+
+
+
 ## [FinnScraper: house ads mining from finn.no](https://github.com/Wizdore/finn_scraper)
 This project is aimed at collecting used home-for-sale ads data from finn. The program collects AD ID's from all the newly listed houses and scraps the details of the houses from each ad id. It can be run everyday with a cronjob to periodically collect newly listed house ads. The bash script to run the cron is included in the project. The collected houses are stored in a local `TinyDB`  database. It also sends a notification to discord with a webhook informing the user how many new ads data has been collected and whats the total size of the dataset everytime the program is run.
 
