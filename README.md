@@ -1,6 +1,6 @@
 ## [Norway's classified ads for houses data dashboard](https://housing-market-norway.herokuapp.com/)
 {: #house-dashboard }
-This is a dashboard of general statistics of housing market. The data is mined using the [FinnScrapper](#finnscraper) deployed on a `Raspberry Pi` that collect new house ads posted in finn.no and stores the data locally. The dashboard aims to provide an overview of price, location, facilities etc. one can expect given their preference of house price, area and other factors. The data cleaning, preparation and the dashboard is all done with Python. Its currently deployed on [Heroku](https://housing-market-norway.herokuapp.com/).
+This is a dashboard of general statistics of housing market. The data is mined using the [FinnScrapper](#finnscraper) deployed on a `Raspberry Pi` that collect new house ads posted in finn.no and stores the data locally. The dashboard aims to provide an overview of price, location, facilities etc. one can expect given their preference of house price, area and other factors. The data cleaning, preparation and the dashboard is all done with Python. Its currently deployed on [Heroku Free Tier](https://housing-market-norway.herokuapp.com/), so it might take a while to load from cold start.
 
 {:refdef: style="text-align: center;"}
 ![](/images/housingdashboard.png)
