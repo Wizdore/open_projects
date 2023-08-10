@@ -2,30 +2,41 @@ name: Compile LaTeX to PDF
 
 on:
   push:
+    tags:
+      - '*.*.*'
     paths:
       - '**/*.tex'
 
 jobs:
-  build:
+  build_latex:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
+      - name: Set up Git repository
         uses: actions/checkout@v2
-
-      - name: Set up LaTeX
+      - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
-          pdf_file: shaon_rahman_cv.pdf
+          root_file: cv/shaon_rahman_cv.tex
 
-      - name: Compile LaTeX
-        run: |
-          pdflatex -interaction=nonstopmode -halt-on-error -file-line-error -synctex=1 shaon_rahman_cv.tex
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
         env:
-          PDFLATEX: pdflatex
-
-      - name: Upload PDF artifact
-        uses: actions/upload-artifact@v2
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          name: compiled-pdf
-          path: shaon_rahman_cv.pdf
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+          draft: false
+          prerelease: false
+
+      - name: Upload Release Asset
+        id: upload-release-asset 
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} 
+          asset_path: ./cv/shaon_rahman_cv.pdf
+          asset_name: shaon_rahman_cv.pdf
+          asset_content_type: pdf
+
